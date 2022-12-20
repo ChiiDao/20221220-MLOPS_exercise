@@ -9,7 +9,7 @@ import numpy as np
 sum_paid_inv_0_12m = st.number_input('sum_paid_inv_0_12m', 0)
 time_hours = st.number_input('time_hours', 0.0)
 
-API_url = 'https://mlcasestudy-ybspnrtpla-ew.a.run.app/predict'
+API_url = 'https://ml-case-study-ybspnrtpla-ew.a.run.app/predict'
 
 X_dict = {'sum_paid_inv_0_12m':sum_paid_inv_0_12m,
           'time_hours':time_hours}
