@@ -6,8 +6,8 @@ import numpy as np
 '# ML Case Study - Logistic Regression on 2 parameters '
 
 '### What are the features values ?'
-sum_paid_inv_0_12m = st.number_input('sum_paid_inv_0_12m', 10000)
-time_hours = st.number_input('time_hours' , 10.10)
+sum_paid_inv_0_12m = st.number_input('sum_paid_inv_0_12m', 0)
+time_hours = st.number_input('time_hours', 0.0)
 
 API_url = 'https://mlcasestudy-ybspnrtpla-ew.a.run.app/predict'
 
