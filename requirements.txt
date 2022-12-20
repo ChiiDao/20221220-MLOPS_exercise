@@ -1,0 +1,9 @@
+numpy
+pandas
+
+# Machine Learning
+scikit-learn
+
+# API
+fastapi
+uvicorn
