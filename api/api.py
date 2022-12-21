@@ -18,9 +18,15 @@ def predict(sum_paid_inv_0_12m: int,  # 92027
 
     model = app.state.model
 
-    y_pred = model.predict(X_pred)
+    #returns a DataFrame of one row with two columns : proba to be 0 & proba to be 1
+    y_pred = model.predict(X_pred)[0]
 
-    return {'default' : int(y_pred)}
+    y_pred_proba_zero = model.predict_proba(X_pred)[0][0]
+    y_pred_proba_one = model.predict_proba(X_pred)[0][1]
+
+    return {'y_pred_proba_zero':y_pred_proba_zero,
+        'y_pred_proba_one': y_pred_proba_one,
+        'default':y_pred}
 
 @app.get("/")
 def root():
